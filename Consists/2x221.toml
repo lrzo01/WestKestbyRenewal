@@ -1,0 +1,14 @@
+description = "Class 221 + Class 221"
+units = ["Class221", "Class221"]
+
+[activities.reverse]
+min = 40
+max = 60
+
+[activities.attach]
+min = 60
+max = 90
+
+[activities.detach]
+min = 45
+max = 60
