@@ -24,7 +24,11 @@ HMB = ["CLM", "CKS"]
 CKS = ["HMB", "MTF"]
 MTF = ["CKS", "SBR"]
 SBR = ["MTF", "AIB"]
-AIB = ["SBR"]
+AIB = ["SBR", "YNE"]
+YNE = ["AIB", "CSN"]
+CSN = ["YNE", "WBY"]
+WBY = ["CSN", "LHM"]
+LHM = ["WBY"]
 WYN = ["ABH", "SLT"]
 SLT = ["WYN", "DNF"]
 DNF = ["SLT", "BTL"]
@@ -43,8 +47,8 @@ GPT = ["LPT", "WRW"]
 
 [[unmodelled]]
 at = "MTF"
-weight = 1.0
+weight = 3
 
 [[unmodelled]]
-at = "AIB"
-weight = 1.0
+at = "LHM"
+weight = 1
