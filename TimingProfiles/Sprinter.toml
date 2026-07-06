@@ -1,5 +1,5 @@
 [profile]
-description = "SprinterProfile generated timing profile"
+description = "Sprinter generated timing profile"
 units = ["Class142", "Class150", "Class153", "Class155", "Class156", "Class158"]
 
 [[segment]]
@@ -21,6 +21,11 @@ pass = "1"
 route = "Branch:KMTHHLT"
 stop = "0H"
 pass = "0Q"
+
+[[segment]]
+route = "Branch:KSBYSBX"
+stop = "2H"
+pass = "0T"
 
 [[segment]]
 route = "Branch:KSBYSDG"
@@ -68,6 +73,11 @@ stop = "3T"
 pass = "1T"
 
 [[segment]]
+route = "DM_1:KSBYSBX"
+stop = "2T"
+pass = "1"
+
+[[segment]]
 route = "DM_1:KSBYSDG"
 stop = "3Q"
 pass = "1Q"
@@ -108,6 +118,11 @@ stop = "4"
 pass = "2"
 
 [[segment]]
+route = "DM_6:KSBYSBX"
+stop = "3"
+pass = "1Q"
+
+[[segment]]
 route = "DM_6:KSBYSDG"
 stop = "3"
 pass = "1Q"
@@ -143,6 +158,11 @@ stop = "2T"
 pass = "1"
 
 [[segment]]
+route = "KESTBY:KSBYSBX"
+stop = "1"
+pass = "0Q"
+
+[[segment]]
 route = "KESTBY:KSBYSDG"
 stop = "1Q"
 pass = "0Q"
@@ -173,6 +193,11 @@ stop = "3"
 pass = "1"
 
 [[segment]]
+route = "KMTHHLT:KSBYSBX"
+stop = "2H"
+pass = "0T"
+
+[[segment]]
 route = "KMTHHLT:KSBYSDG"
 stop = "2T"
 pass = "1"
@@ -201,6 +226,36 @@ pass = "1T"
 route = "KMTHHLT:UM_5"
 stop = "4"
 pass = "2"
+
+[[segment]]
+route = "KSBYSBX:KSBYSDG"
+stop = "1H"
+pass = "0H"
+
+[[segment]]
+route = "KSBYSBX:KSTBY28"
+stop = "0T"
+pass = "0Q"
+
+[[segment]]
+route = "KSBYSBX:KSTBY29"
+stop = "1Q"
+pass = "0Q"
+
+[[segment]]
+route = "KSBYSBX:Points16"
+stop = "1Q"
+pass = "0Q"
+
+[[segment]]
+route = "KSBYSBX:UM_1"
+stop = "3"
+pass = "1"
+
+[[segment]]
+route = "KSBYSBX:UM_5"
+stop = "3"
+pass = "1Q"
 
 [[segment]]
 route = "KSBYSDG:KSTBY28"

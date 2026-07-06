@@ -1,0 +1,11 @@
+Units = ["Class220", "Class221"]
+MassTonnes = 185.6 
+MaxSpeedMph = 125.0
+MaxTractiveEffortKn = 150.0
+ContinuousPowerKw = 1792.0
+TractionRampUpTime = 2.5
+TractionRampDownTime = 1.5
+ServiceBrakeRateMps2 = 0.75
+EmergencyBrakeRateMps2 = 1.2
+BaseResistanceN = 2.5
+AeroDragCoefficient = 0.32  
