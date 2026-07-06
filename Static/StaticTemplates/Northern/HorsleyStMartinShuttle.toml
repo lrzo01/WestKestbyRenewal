@@ -1,0 +1,6 @@
+[staticTemplate]
+description = "Horsley & St Martin Shuttle"
+timing_load = "75mph Super Sprinter 150/153/155/156"
+
+[afterSimulatedArea]
+HSM = { travel_time = "10H", dwell = "0H" }

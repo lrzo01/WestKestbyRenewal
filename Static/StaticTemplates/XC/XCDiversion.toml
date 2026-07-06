@@ -1,9 +1,13 @@
 [staticTemplate]
-description = "XC Diversion Route (Aireborough to Anserham)"
-timing_load = "75mph Super Sprinter 150/153/155/156"
+description = "XC Diversion Route (Leighmouth to Anserham)"
+timing_load = "125mph Voyager 220/221"
 
 [beforeSimulatedArea]
-AIB = { travel_time = "20", dwell = "2" }
+LHM = { travel_time = "0",   dwell = "2" }   
+WBY = { travel_time = "45",  dwell = "2" }  
+CSN = { travel_time = "15",  dwell = "2" }  
+YNE = { travel_time = "50",  dwell = "2" }  
+AIB = { travel_time = "30",  dwell = "2" }  
 
 [afterSimulatedArea]
-AAS = { travel_time = "62", dwell = "2" }
+AAS = { travel_time = "55", dwell = "2" }   
