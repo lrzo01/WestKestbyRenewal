@@ -1,0 +1,9 @@
+[staticTemplate]
+description = "XC Diversion Route (Aireborough to Anserham)"
+timing_load = "75mph Super Sprinter 150/153/155/156"
+
+[beforeSimulatedArea]
+AIB = { travel_time = "20", dwell = "2" }
+
+[afterSimulatedArea]
+AAS = { travel_time = "62", dwell = "2" }
