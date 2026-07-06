@@ -1,9 +1,14 @@
-# Timetable Template
+# West Kestby Renewal Project
 
-## About the included timetable
-This timetable is intended to represent a monday service in Kestby (no freight included) at a increased frequency. 
+This timetable is set on the August Bank Holiday Monday during the **West Kestby Renewal Project**.
 
-## Further guidance
-This is a template repository, meaning you can copy it for yourself. The trains included in Interlocked, TIPLOCs and paths are filled out already, as well as some templates and diagrams which can be reused.
+Major engineering works are taking place across the network:
+- Electrification works are underway south of Aireborough.
+- Track renewal and infrastructure upgrades have closed the line between Canton and Horsley & St Martins.
 
-The wiki is available to help guide you on understanding how to create timetables.
+As a result, a significantly amended timetable is in operation:
+- **CrossCountry (XC)** are diverted via the Barnard Line between Aireborough and Anserham.
+- **Northern (NT)** services terminate at Kestby, with selected services extending to Horsley & St Martins.
+- **TransPennine Express (TP)** operates a reduced diversionary service via the Barnard Line, with only selected trains serving Kestby.
+
+Single line working is in place between Kestby and Horsley & St Martins.
