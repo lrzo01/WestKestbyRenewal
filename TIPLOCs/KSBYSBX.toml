@@ -1,0 +1,5 @@
+name = "Kestby Signal Box"
+
+[custom]
+section = "DM_2"
+at = 18.8
