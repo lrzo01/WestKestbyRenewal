@@ -1,7 +1,7 @@
 [manifest]
-id = "wuzzer-timetable"
-name = "Wuzzer's Timetable"
-version = "1.1.1"
+id = "west-kestby-renewal"
+name = "West Kestby Renewal Project"
+version = "0.1.0"
 author = "beewuzzer"
 
 [target]
@@ -10,6 +10,6 @@ sim = "kestby"
 sim_version = "^0.1.0"
 
 [timing]
-timing_mode = "tiploc" 
+timing_mode = "tiploc"
 tiploc = "KESTBY"
 occurrence = 1
