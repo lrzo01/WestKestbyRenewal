@@ -17,20 +17,6 @@ delayed_pct = 0.1
 disruption_pct = 0.05
 set_swap_pct = 0.02
 
-
-[[service]]
-headcode = "1T08"
-template = "DMToBranch"
-timing = "0806"
-
-[service.static]
-template = "TPEDiversion"
-
-[[service.exception]]
-tiploc = "KMTHHLT"
-pass = true
-
-
 [[service]]
 headcode = "1T49"
 template = "BranchToUM"
