@@ -5,19 +5,20 @@ allocation = [
     { consist = "66Freight", weight = 100 } 
 ]
 
+allow_early = true
+
 [scenario]
 base_delay = 3
 delayed_pct = 0.1
 disruption_pct = 0.05
 set_swap_pct = 0
+runs_as_required = 0.6
 
 [[service]]
 headcode = "6M05"
 template = "BranchToUM"
 timing = "0905"
 do_not_advertise = true
-allow_early = true
-runs_as_required = 0.5
 [[service.exception]]
 tiploc = "KESTBY"
 pass = true
@@ -32,8 +33,6 @@ headcode = "6M15"
 template = "DMToBranch"
 timing = "1305"
 do_not_advertise = true
-allow_early = true
-runs_as_required = 0.5
 [[service.exception]]
 tiploc = "KESTBY"
 pass = true
@@ -49,7 +48,6 @@ headcode = "6M25"
 template = "BranchToUM"
 timing = "1905"
 do_not_advertise = true
-allow_early = true
 runs_as_required = 0.8
 [[service.exception]]
 tiploc = "KESTBY"

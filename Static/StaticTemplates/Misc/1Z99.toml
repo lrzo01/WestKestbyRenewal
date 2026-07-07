@@ -3,4 +3,5 @@ description = "1Z99"
 timing_load = "46"
 
 [beforeSimulatedArea]
-AIB = { travel_time = "20", dwell = "0H" }
+HFD = { travel_time = "25", dwell = "6H" }
+WRW = { travel_time = "75", dwell = "10H" }

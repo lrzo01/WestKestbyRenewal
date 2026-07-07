@@ -1,90 +1,49 @@
 [diagram]
-operator = "CrossCountry"
-
+operator = "West Coast Railways"
 allocation = [
-    { consist = "2x220", weight = 40 },
-    { consist = "220+221", weight = 60 },
-    { consist = "220", weight = 80 },
-    { consist = "221", weight = 100 },
+    { consist = "47", weight = 100 }
 ]
 
-set_swap_pool = [
-    { consist = "2x221", weight = 5 },
-    { consist = "2x220", weight = 40 },
-    { consist = "220+221", weight = 60 },
-    { consist = "220", weight = 80 },
-    { consist = "221", weight = 100 },
-]
+allow_early = true
 
-[scenario]
-base_delay = 3
-delayed_pct = 0.1
-disruption_pct = 0.05
-set_swap_pct = 0.02
-
-[[service]]
-headcode = "1S06"
-template = "DMToBranch"
-timing = "0706"
-
-[service.static]
-template = "XCDiversion"
+[[service]] 
+headcode = "1Z99"
+template = "BranchKestby" 
+departs = "0935" 
+signaller_permission = true
+do_not_advertise = true
+[service.static] 
+template = "1Z99" 
+[service.timing]
+profile = "Freight"
+[[service.static.exception]]
+crs = "WRW"
+exclude = true
 [[service.exception]]
 tiploc = "KESTBY"
-pass = true
+plat = 2
+path = "DM"
 [[service.exception]]
-tiploc = "KMTHHLT"
+tiploc = "KMTHHALT"
 pass = true
-[[service.static.exception]]
-crs = "LMO"
-exclude = true
-[[service.static.exception]]
-crs = "WBY"
-exclude = true
-[[service.static.exception]]
-crs = "CSN"
-exclude = true
 
-[[service]]
-headcode = "1S47"
-template = "BranchToUM"
-timing = "0946"
-
-[service.static]
-template = "XCDiversion"
+[[service]] 
+headcode = "1Z99"
+template = "KestbyBranch" 
+departs = "0945" 
+signaller_permission = true
+do_not_advertise = true
+[service.static] 
+template = "1Z99" 
 reversed = true
 [[service.exception]]
-tiploc = "KESTBY"
+tiploc = "KMTHHALT"
 pass = true
-[[service.exception]]
-tiploc = "KMTHHLT"
-pass = true
-
-[[service]]
-headcode = "1S16"
-template = "DMToBranch"
-timing = "1706"
-
-[service.static]
-template = "XCDiversion"
 [[service.exception]]
 tiploc = "KESTBY"
-pass = true
-[[service.exception]]
-tiploc = "KMTHHLT"
-pass = true
-
-[[service]]
-headcode = "1S57"
-template = "BranchToUM"
-timing = "1946"
-
-[service.static]
-template = "XCDiversion"
-reversed = true
-[[service.exception]]
+plat = 2
+[[service.activity.attach]]
 tiploc = "KESTBY"
-pass = true
-[[service.exception]]
-tiploc = "KMTHHLT"
-pass = true
+joins = "1T08"
+[service.timing]
+profile = "Freight"
