@@ -10,5 +10,3 @@ As a result, a significantly amended timetable is in operation:
 - **CrossCountry (XC)** are diverted via the Barnard Line between Aireborough and Anserham.
 - **Northern (NT)** services terminate at Kestby, with selected services extending to Horsley & St Martins.
 - **TransPennine Express (TP)** operates a reduced diversionary service via the Barnard Line, with only selected trains serving Kestby.
-
-Single line working is in place between Kestby and Horsley & St Martins.
