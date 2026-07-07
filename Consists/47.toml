@@ -1,0 +1,14 @@
+description = "1Z99"
+units = ["Class47"]
+
+[activities.reverse]
+min = 30
+max = 45
+
+[activities.attach]
+min = 45
+max = 75
+
+[activities.detach]
+min = 30
+max = 45
