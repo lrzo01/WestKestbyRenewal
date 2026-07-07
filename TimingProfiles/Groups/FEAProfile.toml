@@ -1,0 +1,11 @@
+Units = ["FEA"]
+MassTonnes = 1118.0
+MaxSpeedMph = 60.0
+MaxTractiveEffortKn = 409.0
+ContinuousPowerKw = 2460.0
+TractionRampUpTime = 25.0
+TractionRampDownTime = 15.0
+ServiceBrakeRateMps2 = 0.55
+EmergencyBrakeRateMps2 = 0.85
+BaseResistanceN = 0.95
+AeroDragCoefficient = 0.35

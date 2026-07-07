@@ -1,0 +1,9 @@
+[staticTemplate]
+description = "Freight route diverted (Airesborough to Anserham)"
+timing_load = "66"
+
+[beforeSimulatedArea]
+AIB = { travel_time = "30",  dwell = "2" }  
+
+[afterSimulatedArea]
+AAS = { travel_time = "55", dwell = "2" }   

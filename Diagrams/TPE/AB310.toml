@@ -1,0 +1,34 @@
+[diagram]
+operator = "TransPennine Express"
+
+allocation = [
+    { consist = "185", weight = 60 }
+]
+
+set_swap_pool = [
+    { consist = "185", weight = 80 }
+]
+
+[scenario]
+base_delay = 3
+delayed_pct = 0.1
+disruption_pct = 0.05
+set_swap_pct = 0.02
+
+
+[[service]]
+headcode = "2D01"
+template = "KestbyToDM"
+timing = "0612"
+
+[service.static]
+template = "HorsleyStMartinShuttle"
+
+[[service]]
+headcode = "2D02"
+template = "StopperUp"
+timing = "0640"
+
+[service.static]
+template = "ReverseHorsleyShuttle"
+reversed = true

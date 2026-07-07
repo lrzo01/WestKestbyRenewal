@@ -23,7 +23,7 @@ set_swap_pct = 0.02
 [[service]]
 headcode = "2A01"
 template = "BranchKestby"
-timing = "0601"
+timing = "0801"
 [service.static]
 template = "WestDiversion"
 reversed = true
@@ -35,7 +35,7 @@ headcode_increment = 4
 [[service]]
 headcode = "2A02"
 template = "KestbyBranch"
-timing = "0621"
+timing = "0821"
 [service.static]
 template = "WestDiversion"
 [service.recurrence]

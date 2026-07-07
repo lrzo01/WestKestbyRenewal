@@ -2,12 +2,11 @@
 operator = "TransPennine Express"
 
 allocation = [
-    { consist = "2x185", weight = 20 },
-    { consist = "185", weight = 60 }
+    { consist = "185", weight = 60 },
+    { diagram = "AB310" }
 ]
 
 set_swap_pool = [
-    { consist = "2x185", weight = 5 },
     { consist = "185", weight = 80 }
 ]
 
@@ -22,13 +21,15 @@ set_swap_pct = 0.02
 headcode = "1T06"
 template = "DMToBranch"
 timing = "0606"
-
 [service.static]
 template = "TPEDiversion"
-
 [[service.exception]]
 tiploc = "KMTHHLT"
 pass = true
+[[service.activity.detach]]
+tiploc = "KESTBY"
+detach_diagram = "AB310"
+forms = "2D01"
 
 
 [[service]]
