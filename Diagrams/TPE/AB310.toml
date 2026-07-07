@@ -32,3 +32,11 @@ timing = "0640"
 [service.static]
 template = "ReverseHorsleyShuttle"
 reversed = true
+
+# train fault, recovered by 1Z99
+[[service]]
+headcode = "1T08"
+template = "DMToKestby"
+timing = "0806"
+[service.static]
+template = "TPEDiversion"
