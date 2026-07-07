@@ -1,0 +1,76 @@
+[diagram]
+operator = "Northern Rail"
+
+allocation = [
+    { consist = "150", weight = 60 },
+    { consist = "155", weight = 40 }
+]
+
+set_swap_pool = [
+    { consist = "156", weight = 80 },
+    { consist = "158", weight = 60 },
+    { consist = "150", weight = 20 },
+    { consist = "153", weight = 10 }
+]
+
+[scenario]
+base_delay = 3
+delayed_pct = 0.1
+disruption_pct = 0.05
+set_swap_pct = 0.02
+
+
+[[service]]
+headcode = "2N02"
+template = "DMToKestby"
+timing = "0730"
+[service.static]
+template = "EastStopper"
+[service.recurrence]
+every = "120"
+until = "2130"
+headcode_increment = 2
+
+[[service]]
+headcode = "5N02"
+template = "P2toP3"
+timing = "0737"
+do_not_advertise = true
+allow_early = true
+[[service.exception]]
+tiploc = "KESTBY"
+signaller_permission = true
+[[service.exception]]
+tiploc = "KSTBY28"
+signaller_permission = true
+[service.recurrence]
+every = "120"
+until = "2237"
+headcode_increment = 2
+
+[[service]]
+headcode = "2N72"
+template = "KestbyToDM"
+timing = "0752"
+[service.static]
+template = "HorsleyStMartinShuttle"
+[[service.exception]]
+tiploc = "KESTBY"
+activities = ["reverse"]
+plat = 3
+[service.recurrence]
+every = "120"
+until = "2252"
+headcode_increment = 2
+
+[[service]]
+headcode = "2C02"
+template = "StopperUp"
+timing = "0816"
+[service.static]
+template = "ReverseHorsleyShuttle"
+reversed = true
+[service.recurrence]
+every = "120"
+until = "2316"
+headcode_increment = 2

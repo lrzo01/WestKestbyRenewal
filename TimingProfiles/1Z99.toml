@@ -1,20 +1,20 @@
 [profile]
-description = "Voyager generated timing profile"
-units = ["Class220", "Class221"]
+description = "1Z99 generated timing profile"
+units = ["Class47"]
 
 [[segment]]
 route = "Branch:DM_1"
-stop = "3"
+stop = "2T"
 pass = "1T"
 
 [[segment]]
 route = "Branch:DM_6"
-stop = "3Q"
+stop = "2T"
 pass = "2"
 
 [[segment]]
 route = "Branch:KESTBY"
-stop = "2Q"
+stop = "1T"
 pass = "1"
 
 [[segment]]
@@ -24,147 +24,147 @@ pass = "0Q"
 
 [[segment]]
 route = "Branch:KSBYSBX"
-stop = "2"
+stop = "1T"
 pass = "0T"
 
 [[segment]]
 route = "Branch:KSBYSDG"
-stop = "2H"
+stop = "2"
 pass = "1"
 
 [[segment]]
 route = "Branch:KSTBY28"
-stop = "2Q"
+stop = "1T"
 pass = "1"
 
 [[segment]]
 route = "Branch:KSTBY29"
-stop = "2Q"
+stop = "2"
 pass = "1"
 
 [[segment]]
 route = "Branch:Points16"
-stop = "2Q"
+stop = "2"
 pass = "1"
 
 [[segment]]
 route = "Branch:UM_1"
-stop = "3Q"
+stop = "2T"
 pass = "1T"
 
 [[segment]]
 route = "Branch:UM_5"
-stop = "3Q"
+stop = "2T"
 pass = "2"
 
 [[segment]]
 route = "DM_1:DM_6"
-stop = "3H"
+stop = "3"
 pass = "2Q"
 
 [[segment]]
 route = "DM_1:KESTBY"
-stop = "2H"
+stop = "2"
 pass = "1Q"
 
 [[segment]]
 route = "DM_1:KMTHHLT"
-stop = "3"
+stop = "2T"
 pass = "1T"
 
 [[segment]]
 route = "DM_1:KSBYSBX"
-stop = "2Q"
+stop = "2"
 pass = "1"
 
 [[segment]]
 route = "DM_1:KSBYSDG"
-stop = "2T"
+stop = "2Q"
 pass = "1Q"
 
 [[segment]]
 route = "DM_1:KSTBY28"
-stop = "2Q"
+stop = "2"
 pass = "1"
 
 [[segment]]
 route = "DM_1:KSTBY29"
-stop = "2H"
+stop = "2"
 pass = "1Q"
 
 [[segment]]
 route = "DM_1:Points16"
-stop = "2H"
+stop = "2"
 pass = "1Q"
 
 [[segment]]
 route = "DM_1:UM_1"
-stop = "3H"
+stop = "3"
 pass = "2"
 
 [[segment]]
 route = "DM_1:UM_5"
-stop = "3H"
+stop = "3"
 pass = "2Q"
 
 [[segment]]
 route = "DM_6:KESTBY"
-stop = "2H"
+stop = "2"
 pass = "1Q"
 
 [[segment]]
 route = "DM_6:KMTHHLT"
-stop = "3Q"
+stop = "2T"
 pass = "2"
 
 [[segment]]
 route = "DM_6:KSBYSBX"
-stop = "2H"
+stop = "2"
 pass = "1Q"
 
 [[segment]]
 route = "DM_6:KSBYSDG"
-stop = "2H"
+stop = "2Q"
 pass = "1Q"
 
 [[segment]]
 route = "DM_6:KSTBY28"
-stop = "2H"
+stop = "2Q"
 pass = "1Q"
 
 [[segment]]
 route = "DM_6:KSTBY29"
-stop = "2H"
+stop = "2"
 pass = "1Q"
 
 [[segment]]
 route = "DM_6:Points16"
-stop = "2H"
+stop = "2"
 pass = "1"
 
 [[segment]]
 route = "DM_6:UM_1"
-stop = "3H"
+stop = "3"
 pass = "2Q"
 
 [[segment]]
 route = "DM_6:UM_5"
-stop = "3H"
+stop = "3"
 pass = "2"
 
 [[segment]]
 route = "KESTBY:KMTHHLT"
-stop = "2Q"
+stop = "1T"
 pass = "1"
 
 [[segment]]
 route = "KESTBY:KSBYSBX"
-stop = "1"
+stop = "0T"
 pass = "0Q"
 
 [[segment]]
 route = "KESTBY:KSBYSDG"
-stop = "1"
+stop = "0T"
 pass = "0Q"
 
 [[segment]]
@@ -184,52 +184,52 @@ pass = "0Q"
 
 [[segment]]
 route = "KESTBY:UM_1"
-stop = "2H"
+stop = "2"
 pass = "1Q"
 
 [[segment]]
 route = "KESTBY:UM_5"
-stop = "2H"
+stop = "2"
 pass = "1"
 
 [[segment]]
 route = "KMTHHLT:KSBYSBX"
-stop = "2"
+stop = "1T"
 pass = "0T"
 
 [[segment]]
 route = "KMTHHLT:KSBYSDG"
-stop = "2H"
+stop = "2"
 pass = "1"
 
 [[segment]]
 route = "KMTHHLT:KSTBY28"
-stop = "2"
+stop = "1T"
 pass = "0T"
 
 [[segment]]
 route = "KMTHHLT:KSTBY29"
-stop = "2Q"
+stop = "1T"
 pass = "1"
 
 [[segment]]
 route = "KMTHHLT:Points16"
-stop = "2Q"
+stop = "1T"
 pass = "1"
 
 [[segment]]
 route = "KMTHHLT:UM_1"
-stop = "3Q"
+stop = "2T"
 pass = "1T"
 
 [[segment]]
 route = "KMTHHLT:UM_5"
-stop = "3Q"
+stop = "2T"
 pass = "2"
 
 [[segment]]
 route = "KSBYSBX:KSBYSDG"
-stop = "1Q"
+stop = "1"
 pass = "0H"
 
 [[segment]]
@@ -239,67 +239,67 @@ pass = "0Q"
 
 [[segment]]
 route = "KSBYSBX:KSTBY29"
-stop = "1"
+stop = "0T"
 pass = "0Q"
 
 [[segment]]
 route = "KSBYSBX:Points16"
-stop = "1"
+stop = "0T"
 pass = "0Q"
 
 [[segment]]
 route = "KSBYSBX:UM_1"
-stop = "2H"
+stop = "2"
 pass = "1"
 
 [[segment]]
 route = "KSBYSBX:UM_5"
-stop = "2H"
+stop = "2Q"
 pass = "1Q"
 
 [[segment]]
 route = "KSBYSDG:KSTBY28"
-stop = "1H"
+stop = "1Q"
 pass = "0H"
 
 [[segment]]
 route = "KSBYSDG:KSTBY29"
-stop = "1"
+stop = "0T"
 pass = "0Q"
 
 [[segment]]
 route = "KSBYSDG:Points16"
-stop = "1"
+stop = "0T"
 pass = "0Q"
 
 [[segment]]
 route = "KSBYSDG:UM_1"
-stop = "2T"
+stop = "2Q"
 pass = "1Q"
 
 [[segment]]
 route = "KSBYSDG:UM_5"
-stop = "2H"
+stop = "2"
 pass = "1Q"
 
 [[segment]]
 route = "KSTBY28:KSTBY29"
-stop = "1Q"
+stop = "1"
 pass = "0Q"
 
 [[segment]]
 route = "KSTBY28:Points16"
-stop = "1Q"
+stop = "1"
 pass = "0Q"
 
 [[segment]]
 route = "KSTBY28:UM_1"
-stop = "2H"
+stop = "2"
 pass = "1Q"
 
 [[segment]]
 route = "KSTBY28:UM_5"
-stop = "2H"
+stop = "2Q"
 pass = "1Q"
 
 [[segment]]
@@ -309,26 +309,26 @@ pass = "0Q"
 
 [[segment]]
 route = "KSTBY29:UM_1"
-stop = "2H"
+stop = "2"
 pass = "1Q"
 
 [[segment]]
 route = "KSTBY29:UM_5"
-stop = "2H"
+stop = "2"
 pass = "1"
 
 [[segment]]
 route = "Points16:UM_1"
-stop = "2H"
+stop = "2"
 pass = "1Q"
 
 [[segment]]
 route = "Points16:UM_5"
-stop = "2H"
+stop = "2"
 pass = "1"
 
 [[segment]]
 route = "UM_1:UM_5"
-stop = "3H"
+stop = "3"
 pass = "2Q"
 

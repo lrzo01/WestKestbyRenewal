@@ -1,0 +1,87 @@
+[diagram]
+operator = "CrossCountry"
+
+allocation = [
+    { consist = "2x220", weight = 40 },
+    { consist = "220+221", weight = 60 },
+    { consist = "220", weight = 80 },
+    { consist = "221", weight = 100 },
+]
+
+set_swap_pool = [
+    { consist = "2x221", weight = 5 },
+    { consist = "2x220", weight = 40 },
+    { consist = "220+221", weight = 60 },
+    { consist = "220", weight = 80 },
+    { consist = "221", weight = 100 },
+]
+
+[scenario]
+base_delay = 3
+delayed_pct = 0.1
+disruption_pct = 0.05
+set_swap_pct = 0.02
+
+[[service]]
+headcode = "1S08"
+template = "DMToBranch"
+timing = "0906"
+
+[service.static]
+template = "XCDiversion"
+[[service.exception]]
+tiploc = "KESTBY"
+pass = true
+[[service.exception]]
+tiploc = "KMTHHLT"
+pass = true
+
+[[service]]
+headcode = "1S49"
+template = "BranchToUM"
+timing = "1146"
+
+[service.static]
+template = "XCDiversion"
+reversed = true
+[[service.exception]]
+tiploc = "KESTBY"
+pass = true
+[[service.exception]]
+tiploc = "KMTHHLT"
+pass = true
+
+[[service]]
+headcode = "1S18"
+template = "DMToBranch"
+timing = "1906"
+
+[service.static]
+template = "XCDiversion"
+[[service.exception]]
+tiploc = "KESTBY"
+pass = true
+[[service.exception]]
+tiploc = "KMTHHLT"
+pass = true
+
+[[service]]
+headcode = "1S59"
+template = "BranchToUM"
+timing = "2146"
+
+[service.static]
+template = "XCDiversion"
+reversed = true
+[[service.exception]]
+tiploc = "KESTBY"
+pass = true
+[[service.exception]]
+tiploc = "KMTHHLT"
+pass = true
+[[service.static.exception]]
+crs = "WBY"
+exclude = true
+[[service.static.exception]]
+crs = "LMO"
+exclude = true

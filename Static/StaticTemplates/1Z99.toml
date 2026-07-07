@@ -1,0 +1,6 @@
+[staticTemplate]
+description = "1Z99"
+timing_load = "46"
+
+[beforeSimulatedArea]
+AIB = { travel_time = "20", dwell = "0H" }

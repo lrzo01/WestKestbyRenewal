@@ -1,0 +1,52 @@
+[diagram]
+operator = "CrossCountry"
+
+allocation = [
+    { consist = "2x220", weight = 40 },
+    { consist = "220+221", weight = 60 },
+    { consist = "220", weight = 80 },
+    { consist = "221", weight = 100 },
+]
+
+set_swap_pool = [
+    { consist = "2x221", weight = 5 },
+    { consist = "2x220", weight = 40 },
+    { consist = "220+221", weight = 60 },
+    { consist = "220", weight = 80 },
+    { consist = "221", weight = 100 },
+]
+
+[scenario]
+base_delay = 3
+delayed_pct = 0.1
+disruption_pct = 0.05
+set_swap_pct = 0.02
+
+[[service]]
+headcode = "1S12"
+template = "DMToBranch"
+timing = "1306"
+
+[service.static]
+template = "XCDiversion"
+[[service.exception]]
+tiploc = "KESTBY"
+pass = true
+[[service.exception]]
+tiploc = "KMTHHLT"
+pass = true
+
+[[service]]
+headcode = "1S53"
+template = "BranchToUM"
+timing = "1546"
+
+[service.static]
+template = "XCDiversion"
+reversed = true
+[[service.exception]]
+tiploc = "KESTBY"
+pass = true
+[[service.exception]]
+tiploc = "KMTHHLT"
+pass = true

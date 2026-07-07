@@ -15,3 +15,5 @@ path = "UM"
 
 [[simulation.point]]
 tiploc = "KSBYSDG"
+
+[simulation.terminates]

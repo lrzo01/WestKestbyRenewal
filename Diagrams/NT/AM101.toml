@@ -1,0 +1,44 @@
+[diagram]
+operator = "Northern Rail"
+
+allocation = [
+    { consist = "156", weight = 60 },
+    { consist = "158", weight = 40 }
+]
+
+set_swap_pool = [
+    { consist = "156", weight = 80 },
+    { consist = "158", weight = 60 },
+    { consist = "150", weight = 20 },
+    { consist = "153", weight = 10 }
+]
+
+[scenario]
+base_delay = 3
+delayed_pct = 0.1
+disruption_pct = 0.05
+set_swap_pct = 0.02
+
+
+[[service]]
+headcode = "2A01"
+template = "BranchKestby"
+timing = "0601"
+[service.static]
+template = "WestDiversion"
+reversed = true
+[service.recurrence]
+every = "120"
+until = "2201"
+headcode_increment = 4
+
+[[service]]
+headcode = "2A02"
+template = "KestbyBranch"
+timing = "0621"
+[service.static]
+template = "WestDiversion"
+[service.recurrence]
+every = "120"
+until = "2221"
+headcode_increment = 4

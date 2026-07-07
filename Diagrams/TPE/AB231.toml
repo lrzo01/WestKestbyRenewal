@@ -1,0 +1,99 @@
+[diagram]
+operator = "TransPennine Express"
+
+allocation = [
+    { consist = "2x185", weight = 20 },
+    { consist = "185", weight = 60 }
+]
+
+set_swap_pool = [
+    { consist = "2x185", weight = 5 },
+    { consist = "185", weight = 80 }
+]
+
+[scenario]
+base_delay = 3
+delayed_pct = 0.1
+disruption_pct = 0.05
+set_swap_pct = 0.02
+
+
+[[service]]
+headcode = "1T06"
+template = "DMToBranch"
+timing = "0606"
+
+[service.static]
+template = "TPEDiversion"
+
+[[service.exception]]
+tiploc = "KMTHHLT"
+pass = true
+
+
+[[service]]
+headcode = "1T47"
+template = "BranchToUM"
+timing = "0846"
+
+[service.static]
+template = "TPEDiversion"
+reversed = true
+
+[[service.exception]]
+tiploc = "KMTHHLT"
+pass = true
+
+
+[[service]]
+headcode = "1T12"
+template = "DMToBranch"
+timing = "1206"
+
+[service.static]
+template = "TPEDiversion"
+
+[[service.exception]]
+tiploc = "KMTHHLT"
+pass = true
+
+
+[[service]]
+headcode = "1T53"
+template = "BranchToUM"
+timing = "1446"
+
+[service.static]
+template = "TPEDiversion"
+reversed = true
+
+[[service.exception]]
+tiploc = "KMTHHLT"
+pass = true
+
+
+[[service]]
+headcode = "1T18"
+template = "DMToBranch"
+timing = "1806"
+
+[service.static]
+template = "TPEDiversion"
+
+[[service.exception]]
+tiploc = "KMTHHLT"
+pass = true
+
+
+[[service]]
+headcode = "1T59"
+template = "BranchToUM"
+timing = "2046"
+
+[service.static]
+template = "TPEDiversion"
+reversed = true
+
+[[service.exception]]
+tiploc = "KMTHHLT"
+pass = true
