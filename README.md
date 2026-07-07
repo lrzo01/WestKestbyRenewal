@@ -8,5 +8,5 @@ Major engineering works are taking place across the network:
 
 As a result, a significantly amended timetable is in operation:
 - **CrossCountry (XC)** are diverted via the Barnard Line between Aireborough and Anserham.
-- **Northern (NT)** services terminate at Kestby, with selected services extending to Horsley & St Martins.
-- **TransPennine Express (TP)** operates a reduced diversionary service via the Barnard Line, with only selected trains serving Kestby.
+- **Northern (NT)** services terminate at Kestby, with an additional shuttle running to Horsley & St Martins forming off these terminators. Another shuttle is running to Anserham Agincourt Square replacing the Barnard shuttle and the Wrenwell service.
+- **TransPennine Express (TP)** operates a reduced diversionary service via the Barnard Line, stopping at Kestby.
